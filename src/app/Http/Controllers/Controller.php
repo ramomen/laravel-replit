@@ -15,6 +15,6 @@ class Controller extends BaseController
     use AuthorizesRequests, DispatchesJobs, ValidatesRequests;
   
   public function shortUrl(Request $request){
-    dd($request);
+    return $request->all();
   }
 }
