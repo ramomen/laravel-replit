@@ -1,0 +1,9 @@
+//Rewrite to www
+Options +FollowSymLinks
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^laravel.ramazandegirmen.repl.co[nc]
+RewriteRule ^(.*)$ http://www.laravel.ramazandegirmen.repl.co/$1 [r=301,nc]
+
+//Change default directory page
+DirectoryIndex src/public/index.php
+ 
